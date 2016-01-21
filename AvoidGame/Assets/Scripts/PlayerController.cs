@@ -29,8 +29,19 @@ public class PlayerController : MonoBehaviour {
 		{
 			transform.position = new Vector3 (2f, transform.position.y, transform.position.z);
 		}
-			
 	
-	
+	}
+
+	void MoveLeft()
+	{
+		
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if(other.CompareTag("Enemy"))
+		{
+			Debug.Log("Game Over");
+		}
 	}
 }

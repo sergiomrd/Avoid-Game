@@ -196,7 +196,7 @@ public class EnemyController : MonoBehaviour {
 	{
 		if(other.CompareTag("Boundary"))
 		{
-			gameObject.SetActive(false);
+			Destroy(gameObject);
 		}
 	}
 }
